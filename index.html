@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator - M Ilham Rizky</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/calculator.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="main">
+            <div class="top">
+                <form action="" name="form">
+                    <input class="textview" name="textview">
+                </form>
+            </div>
+            <div class="bot">
+                <table cellspacing=0>
+                    <tr>
+                        <td><input class="btn-op" type="button" value="C" onclick="clean()"></td>
+                        <td>
+                            <button class="btn-op" onclick="back()">
+                                <img src="img/delete.png" alt="" width="20px">
+                            </button>
+                        </td>
+                        <td><input class="btn-op" type="button" value="%" onclick="insert('%')"></td>
+                        <td><input class="btn-op" type="button" value="/" onclick="insert('/')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="button" value="7" onclick="insert(7)"></td>
+                        <td><input class="btn" type="button" value="8" onclick="insert(8)"></td>
+                        <td><input class="btn" type="button" value="9" onclick="insert(9)"></td>
+                        <td>
+                            <button class="btn-op" onclick="insert('*')">
+                                <img src="img/times.png" alt="" width="12px">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="button" value="4" onclick="insert(4)"></td>
+                        <td><input class="btn" type="button" value="5" onclick="insert(5)"></td>
+                        <td><input class="btn" type="button" value="6" onclick="insert(6)"></td>
+                        <td><input class="btn-op" type="button" value="-" onclick="insert('-')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="button" value="1" onclick="insert(1)"></td>
+                        <td><input class="btn" type="button" value="2" onclick="insert(2)"></td>
+                        <td><input class="btn" type="button" value="3" onclick="insert(3)"></td>
+                        <td><input class="btn-op" type="button" value="+" onclick="insert('+')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="button" value="0" onclick="insert(0)"></td>
+                        <td><input class="btn-op" type="button" value="." onclick="insert('.')"></td>
+                        <td colspan="2"><input class="btn-hasil" type="button" value="=" onclick="hasil()"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

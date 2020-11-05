@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Gotham";
+	src: url(../font/GothamBold.ttf) format("truetype");
+	font-weight: bold;
+}
+body{    
+    overflow-y: hidden;
+}
+.wrap{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    background: url('../img/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+.main{
+    width: 320px;
+    background: url('../img/phone.png');
+    background-size: cover;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+.top{
+    width: 100%;
+    height: 110px;
+    padding-top: 140px;
+}
+.bot{
+    width: 100%;
+}
+input.textview{
+    width: 205px;
+    height: 50px;
+    margin: 5px;
+    font-size: 40px;
+    padding: 10px;
+    font-family: "Roboto";
+    font-weight: 400;
+    background: transparent;
+    color: white;
+    border: none;
+    text-align: right;
+}
+table{
+    margin: 0 auto;
+}
+.btn,.btn-hasil, .btn-op{
+    border: none;
+    font-family: "Gotham";
+    font-size: 17px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 5px;
+    background-position: center;
+    transition: background 0.8s;
+}
+.btn:hover, .btn-op:hover{
+    background: #cccccc radial-gradient(circle, transparent 1%, #cccccc 1%) center/20000%;
+}
+.btn:active, .btn-hasil:active, .btn-op:active{
+    background-color: #F27121;
+    background-size: 100%;
+    transition: background 0s;
+}
+.btn{
+    background: transparent;
+    border: 1px solid #cccccc;
+}
+.btn-op{
+    background: #FAD87C;
+}
+.btn-hasil{
+    width: 100px;
+    color: white;
+    background-image: linear-gradient(to right, #E94057 , #F27121);
+}
